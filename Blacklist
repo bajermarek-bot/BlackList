@@ -1,3 +1,42 @@
+! =========================================================
+! CZ-ADGUARD-BLACKLIST
+! Česká reklamní a trackingová infrastruktura
+! DNS / AdGuard Home
+! =========================================================
+
+! --- Seznam / Sklik ---
+||ad.seznam.cz^
+||ssp.seznam.cz^
+
+! --- Centrum / CNC ---
+||tracker.cncenter.cz^
+
+! --- Adform ---
+||adform.net^
+
+! --- Video reklama ---
+||videoad.cz^
+
+! --- Etarget ---
+||etarget.cz^
+
+! --- Reklamní infrastruktura ---
+||adexpert.cz^
+||adserver.cz^
+||adserver.*^
+
+! --- Google reklama ---
+||doubleclick.net^
+||googlesyndication.com^
+||googleadservices.com^
+||google-analytics.com^
+
+! --- Microsoft reklama ---
+||ads.microsoft.com^
+
+! --- Meta ---
+||an.facebook.com^
+
 ||prod.cz.devices.vtvanalytics.com^$important
 ||nx-sg-v4.mentamob.com^$important
 ||app.datacounterwidget.com^$important
