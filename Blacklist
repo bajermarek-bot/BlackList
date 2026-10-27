@@ -42,3 +42,91 @@
 ||app.datacounterwidget.com^$important
 ||https://1gr.cz^
 ||https://servix.idnes.cz^$important
+
+# AdGuard Home – šetrnější seznam reklamních a trackingových domén
+# Formát: AdGuard DNS filtering rules
+# Cíl: blokovat hlavně samostatné reklamní/trackovací endpointy.
+# Záměrně vynechány celé sociální sítě, CDN a obecné skripty,
+# které mohou způsobovat problémy s načítáním webů nebo přihlášením.
+
+# Google – reklamní endpointy
+||ads.google.com^
+||pagead2.googlesyndication.com^
+||partner.googleadservices.com^
+||adservice.google.com^
+||adservice.google.com.au^
+||pubads.g.doubleclick.net^
+||ad.doubleclick.net^
+||stats.g.doubleclick.net^
+
+# Google Analytics – může omezit měření návštěvnosti
+||www.google-analytics.com^
+||ssl.google-analytics.com^
+||analytics.google.com^
+
+# Meta – pouze samostatné trackingové endpointy; neblokuje facebook.com
+||connect.facebook.net^
+||pixel.facebook.com^
+
+# X / Twitter – reklamní a analytické endpointy
+||analytics.twitter.com^
+||ads.twitter.com^
+
+# TikTok – pouze analytické/reklamní endpointy; neblokuje CDN obsahu
+||analytics.tiktok.com^
+||ads.tiktok.com^
+
+# Amazon – reklamní systémy
+||amazon-adsystem.com^
+||aax.amazon-adsystem.com^
+
+# Microsoft / Bing – reklamní měření
+||bat.bing.com^
+||ads.microsoft.com^
+
+# LinkedIn – reklamní měření
+||px.ads.linkedin.com^
+
+# Snapchat – reklamní API
+||adsapi.snapchat.com^
+
+# Reddit – reklamy a analytika
+||analytics.reddit.com^
+||ads.reddit.com^
+
+# Pinterest – reklamy a analytika
+||analytics.pinterest.com^
+||ads.pinterest.com^
+
+# Další reklamní / trackingové služby
+||scorecardresearch.com^
+||quantserve.com^
+||cdn.taboola.com^
+||api.segment.io^
+||ads.yandex.ru^
+||ad.yieldmo.com^
+||ads.pubmatic.com^
+||adserver.pubmatic.com^
+||ads.adform.net^
+||ads.criteo.net^
+||ads.contextweb.com^
+||ad1.clicktripz.com^
+||ads.playhaven.com^
+||ads.nexage.com^
+||ads.mobfox.com^
+||ads.mdotm.com^
+||ads.mediaplex.com^
+||ads.klickthru.com^
+||ads.infolinks.com^
+||ads.adriver.ru^
+||ads.a-ads.com^
+||adnxs.com^
+||adroll.com^
+||adsafeprotected.com^
+
+# Poznámky:
+# - DNS filtry neumí blokovat konkrétní URL cesty, např. /ads nebo /tr.
+# - Některé služby mohou používat společné domény pro reklamy i legitimní funkce.
+# - Pokud něco přestane fungovat, vypni příslušné pravidlo nebo použij protokol dotazů
+#   v AdGuard Home k nalezení blokované domény.
+
